@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from pyowm import OWM
 from pyowm.utils.config import get_default_config
 
-bot = telebot.TeleBot("Your_bot_Api")
+bot = telebot.TeleBot("5198083670:AAH8Td_aoWI9a1BIQcAxMDFmtC_BuzqwJoU")
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -41,7 +41,7 @@ def test(message):
 		place = message.text
 		config_dict = get_default_config()
 		config_dict['language'] = 'ru'
-		owm = OWM('Your_weather_API', config_dict)
+		owm = OWM('bb78a35feaa4f01ddd88f0b0e68f6574', config_dict)
 		mgr = owm.weather_manager()
 		observation = mgr.weather_at_place(place)
 		w = observation.weather
