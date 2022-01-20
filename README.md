@@ -1,4 +1,4 @@
 # TGBot
-Телеграм бот погоды
-Ип 18-3
-Луговский Владислав
+Weather bot for practice
+IP 18-3
+Lugovskiy Vladislav
