@@ -1,7 +1,4 @@
-import time
-import requests
 import telebot
-from bs4 import BeautifulSoup
 from pyowm import OWM
 from pyowm.utils.config import get_default_config
 
@@ -32,12 +29,7 @@ def test(message):
 
 		wi = w.wind()['speed']
 		humi = w.humidity
-		cl = w.clouds
-		st = w.status
-		dt = w.detailed_status
-		ti = w.reference_time('iso')
 		pr = w.pressure['press']
-		vd = w.visibility_distance
 
 		bot.send_message(message.chat.id, "В городе " + str(place) + " температура " + str(t1) + " °C" + "\n" +
 				"Максимальная температура " + str(t3) + " °C" +"\n" +
