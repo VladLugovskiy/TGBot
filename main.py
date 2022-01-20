@@ -63,5 +63,6 @@ def test(message):
 	except:
 		bot.send_message(message.chat.id, "Такой город не найден!")
 		print(str(message.text), "- не найден")
+		print('hi')
 
 bot.polling(none_stop=True, interval=0)
